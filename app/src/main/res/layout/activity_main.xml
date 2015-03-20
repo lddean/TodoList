@@ -1,0 +1,65 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity">
+    <ViewStub
+        android:id="@+id/btn1ViewStub"
+        android:layout="@layout/todolist"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        />
+    <ViewStub
+        android:id="@+id/btn2ViewStub"
+        android:layout="@layout/donelist"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        />
+    <ViewStub
+        android:id="@+id/btn3ViewStub"
+        android:layout="@layout/memberlist"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        />
+
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="54dip"
+        android:orientation="horizontal"
+        android:layout_gravity="bottom"
+        android:layout_alignParentBottom="true"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        >
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="54dip">
+
+            <Button
+                android:id = "@+id/todolist"
+                android:background="#888888"
+                android:layout_width="70dip"
+                android:layout_height="54dip"
+                android:layout_weight ="1"
+                android:text="To do"
+                />
+            <Button
+                android:id = "@+id/donelist"
+                android:background="#888888"
+                android:layout_width="70dip"
+                android:layout_height="54dip"
+                android:layout_weight ="1"
+                android:text="Done"
+                />
+            <Button
+                android:id = "@+id/member"
+                android:background="#888888"
+                android:layout_width="70dip"
+                android:layout_height="54dip"
+                android:layout_weight ="1"
+                android:text="member"
+                />
+        </TableRow>
+    </TableLayout>
+</RelativeLayout>
